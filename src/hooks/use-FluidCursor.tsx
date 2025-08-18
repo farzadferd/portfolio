@@ -1121,7 +1121,7 @@ const useFluidCursor = () => {
   }
 
   function correctRadius(radius) {
-    let aspectRatio = canvas.width / canvas.height;
+    const aspectRatio = canvas.width / canvas.height;
     if (aspectRatio > 1) radius *= aspectRatio;
     return radius;
   }
@@ -1239,13 +1239,13 @@ const useFluidCursor = () => {
   }
 
   function correctDeltaX(delta) {
-    let aspectRatio = canvas.width / canvas.height;
+    const aspectRatio = canvas.width / canvas.height;
     if (aspectRatio < 1) delta *= aspectRatio;
     return delta;
   }
 
   function correctDeltaY(delta) {
-    let aspectRatio = canvas.width / canvas.height;
+    const aspectRatio = canvas.width / canvas.height;
     if (aspectRatio > 1) delta /= aspectRatio;
     return delta;
   }
@@ -1301,7 +1301,7 @@ const useFluidCursor = () => {
   }
 
   function getResolution(resolution) {
-    let aspectRatio = gl.drawingBufferWidth / gl.drawingBufferHeight;
+    const aspectRatio = gl.drawingBufferWidth / gl.drawingBufferHeight;
     if (aspectRatio < 1) aspectRatio = 1.0 / aspectRatio;
 
     const min = Math.round(resolution);
