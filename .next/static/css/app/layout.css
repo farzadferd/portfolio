@@ -981,8 +981,32 @@
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .translate-y-0 {
+    --tw-translate-y: calc(var(--spacing) * 0);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * 1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-2 {
+    --tw-translate-y: calc(var(--spacing) * 2);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-5 {
+    --tw-translate-y: calc(var(--spacing) * 5);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .translate-y-14 {
     --tw-translate-y: calc(var(--spacing) * 14);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-20 {
+    --tw-translate-y: calc(var(--spacing) * 20);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-30 {
+    --tw-translate-y: calc(var(--spacing) * 30);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-\[-50\%\] {
@@ -998,6 +1022,12 @@
   }
   .scale-3d {
     scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
+  }
+  .scale-\[0\.5\] {
+    scale: 0.5;
+  }
+  .scale-\[0\.75\] {
+    scale: 0.75;
   }
   .scale-\[1\.0\] {
     scale: 1.0;
