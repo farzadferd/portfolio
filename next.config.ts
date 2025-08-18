@@ -1,12 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com', 'assets.aceternity.com'],
-  },
-  eslint: {
-    // Ne bloque PAS le build en cas d'erreurs eslint
-    ignoreDuringBuilds: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'iili.io',
+        port: '',
+        pathname: '/**', // allow all paths under this domain
+      },
+    ],
   },
 };
 
 module.exports = nextConfig;
+

@@ -12,7 +12,7 @@ export function Presentation() {
     description: `Hi! 👋\nI'm Farzad — Fullstack Software Engineer & Aspiring AI/ML Engineer deep into building software applications, LLMs, RAG pipelines, GenAI systems.\nI work at Lexi, an AI healthcare startup based in Cambridge MA, and love building Software Applications that incorporate AI and have real-world use.\nAlways hungry for tough problems, fast feedback, and creating solutions.`,
     src: '/farzad.jpg', // Replace with your memoji image path
     fallbackSrc:
-      'https://iili.io/FvB0Ddv.jpg',
+      'https://freeimage.host/i/FpKwN4e',
   };
 
   const textVariants = {
