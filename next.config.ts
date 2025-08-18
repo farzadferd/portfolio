@@ -6,14 +6,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'iili.io', // or whatever the direct image host is
-        pathname: '/**',
-        port: '',
-      },
-    ],
+    remotePatterns: [],
   },
 };
 
