@@ -32,4 +32,8 @@ Ask a question — my AI avatar (me, Farzad) responds instantly, making the expe
 4. Start dev server (npm run dev)
 
 
+NOTE: I USED TEMPLATE FOR THE UI.
+
+
+
 
