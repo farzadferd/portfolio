@@ -343,14 +343,14 @@ const Chat = () => {
                 <ChatLanding submitQuery={submitQuery} />
               </motion.div>
             ) : currentAIMessage ? (
-              <div className="pb-4">
+                <div className="pb-4">
                 <SimplifiedChatView
                   message={currentAIMessage}
                   isLoading={isLoading}
                   reload={reload}
                   addToolResult={addToolResult}
                 />
-              </div>
+                </div>
             ) : (
               loadingSubmit && (
                 <motion.div
