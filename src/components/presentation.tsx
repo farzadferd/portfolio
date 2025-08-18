@@ -51,6 +51,7 @@ export function Presentation() {
                 src={profile.src}
                 alt={profile.name}
                 width={500}
+                unoptimized
                 height={500}
                 className="h-full w-full object-cover object-center"
                 onError={(e) => {
