@@ -5,9 +5,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'iili.io',
+        hostname: 'freeimage.host',
         port: '',
-        pathname: '/**', // allow all paths under this domain
+        pathname: '/i/**', // allow all paths under this domain
       },
     ],
   },
