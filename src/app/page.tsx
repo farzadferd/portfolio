@@ -127,7 +127,7 @@ export default function Home() {
           width={2000}
           height={2000}
           priority
-          className="translate-y-14 scale-[2] object-cover"
+          className="translate-y-14 scale-[1] object-cover"
         />
       </div>
 
