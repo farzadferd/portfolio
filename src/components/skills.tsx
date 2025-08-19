@@ -96,11 +96,7 @@ const Skills = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        type: 'tween', // must specify type
-        duration: 0.5,
-        ease: [0.19, 1, 0.22, 1], // now TS-safe
-      },
+      transition: { duration: 0.5, ease: [0.19, 1, 0.22, 1] },
     },
   };
 
