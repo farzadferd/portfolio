@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
+import { Easing, motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
 
@@ -15,12 +15,12 @@ export function Presentation() {
 
   const textVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as Easing } },
   };
 
   const paragraphVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut', delay: 0.2 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as Easing, delay: 0.2 } },
   };
 
   return (

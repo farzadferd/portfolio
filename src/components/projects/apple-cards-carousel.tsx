@@ -6,7 +6,7 @@ import {
   IconArrowNarrowRight,
   IconX,
 } from '@tabler/icons-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, Easing, motion } from 'framer-motion';
 import Image, { ImageProps } from 'next/image';
 import React, {
   createContext,
@@ -139,7 +139,7 @@ export const Carousel = ({
                   transition: {
                     duration: 0.5,
                     delay: 0.2 * index,
-                    ease: 'easeOut',
+                    ease: 'easeOut' as Easing,
                   },
                 }}
                 key={'card' + index}
