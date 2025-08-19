@@ -40,11 +40,9 @@ export function Presentation() {
                 alt={profile.name}
                 width={500}
                 unoptimized
+                priority
                 height={500}
                 className="h-full w-full object-cover object-center"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                }}
               />
             </motion.div>
           </div>
