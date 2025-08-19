@@ -10,7 +10,7 @@ export function Presentation() {
     age: '21 years old',
     location: 'Hopkinton, Massachusetts',
     description: `Hi! 👋\nI'm Farzad — Fullstack Software Engineer & Aspiring AI/ML Engineer deep into building software applications, LLMs, RAG pipelines, GenAI systems.\nI work at Lexi, an AI healthcare startup based in Cambridge MA, and love building Software Applications that incorporate AI and have real-world use.\nAlways hungry for tough problems, fast feedback, and creating solutions.`,
-    src: '/farzad.jpg', // Replace with your memoji image path
+    src: '/farzad.JPG', // Replace with your memoji image path
   };
 
   const textVariants = {

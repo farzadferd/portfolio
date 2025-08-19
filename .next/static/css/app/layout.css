@@ -862,10 +862,6 @@
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-y-14 {
-    --tw-translate-y: calc(var(--spacing) * 14);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-y-\[-50\%\] {
     --tw-translate-y: -50%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -880,8 +876,8 @@
   .scale-\[1\.8\] {
     scale: 1.8;
   }
-  .scale-\[2\] {
-    scale: 2;
+  .scale-\[1\] {
+    scale: 1;
   }
   .rotate-45 {
     rotate: 45deg;
