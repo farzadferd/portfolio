@@ -7,23 +7,23 @@ import { ArrowRight, ArrowUp } from 'lucide-react';
 import React, { useEffect } from 'react';
 
 interface ChatBottombarProps {
-  handleInputChangeAction: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  handleSubmitAction: (
+  handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleSubmit: (
     e: React.FormEvent<HTMLFormElement>,
     chatRequestOptions?: ChatRequestOptions
   ) => void;
   isLoading: boolean;
-  stopAction: () => void;
+  stop: () => void;
   input: string;
   isToolInProgress: boolean;
 }
 
 export default function ChatBottombar({
   input,
-  handleInputChangeAction,
-  handleSubmitAction,
+  handleInputChange,
+  handleSubmit,
   isLoading,
-  stopAction,
+  stop,
   isToolInProgress,
 }: ChatBottombarProps) {
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -36,7 +36,7 @@ export default function ChatBottombar({
       input.trim()
     ) {
       e.preventDefault();
-      handleSubmitAction(e as unknown as React.FormEvent<HTMLFormElement>);
+      handleSubmit(e as unknown as React.FormEvent<HTMLFormElement>);
     }
   };
 
@@ -52,13 +52,13 @@ export default function ChatBottombar({
       animate={{ opacity: 1, y: 0 }}
       className="w-full pb-2 md:pb-8"
     >
-      <form onSubmit={handleSubmitAction} className="relative w-full md:px-4">
+      <form onSubmit={handleSubmit} className="relative w-full md:px-4">
         <div className="mx-auto flex items-center rounded-full border border-[#E5E5E9] bg-[#ECECF0] py-2 pr-2 pl-6">
           <input
             ref={inputRef}
             type="text"
             value={input}
-            onChange={handleInputChangeAction}
+            onChange={handleInputChange}
             onKeyDown={handleKeyPress}
             placeholder={
               isToolInProgress ? 'Tool is in progress...' : 'Ask me anything'
@@ -74,7 +74,7 @@ export default function ChatBottombar({
             onClick={(e) => {
               if (isLoading) {
                 e.preventDefault();
-                stopAction();
+                stop();
               }
             }}
           >

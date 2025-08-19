@@ -63,6 +63,7 @@ export default function Home() {
   useEffect(() => {
     // Précharger les assets du chat en arrière-plan
     const img = new window.Image();
+    img.src = '/landing-memojis.png';
 
     // Précharger les vidéos aussi
     const linkWebm = document.createElement('link');
@@ -120,6 +121,14 @@ export default function Home() {
 
       {/* centre memoji */}
       <div className="relative z-10 h-52 w-48 overflow-hidden sm:h-72 sm:w-72">
+        <Image
+          src="/landing-memojis.png"
+          alt="Hero memoji"
+          width={2000}
+          height={2000}
+          priority
+          className="translate-y-14 scale-[2] object-cover"
+        />
       </div>
 
       {/* input + quick buttons */}

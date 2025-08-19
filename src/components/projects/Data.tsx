@@ -57,6 +57,41 @@ const PROJECT_CONTENT = [
     date: 'September 2024 - December 2024',
     links: [{ name: 'Github', url: 'https://github.com/farzadferd/codestrike' }],
     images: [],
+  },
+
+  {
+    title: 'Predictive Modeling: CA Housing',
+    description:
+      'Project that analyzes the California Housing dataset to predict median house values across California districts. Using exploratory data analysis and regression modeling techniques such as Ridge Regression, the project investigates key features impacting housing prices and evaluates model performance.',
+    techStack: [
+      'Python',
+      'scikit-learn',
+      'pandas',
+      'numpy',
+      'matplotlib',
+      'seaborn',
+      'geopandas',
+    ],
+    date: 'May 2024 - June 2024',
+    links: [{ name: 'Github', url: 'https://github.com/farzadferd/Predictive-Modeling-CA-Housing' }],
+    images: [],
+  },
+
+  {
+    title: 'Breast Cancer Tumor Classification',
+    description:
+      'Project that project analyzes the UCI Breast Cancer Wisconsin Diagnostic dataset to classify tumors as malignant or benign. Using multiple machine learning models — Decision Trees, K-Nearest Neighbors (KNN), and Gaussian Naive Bayes — the project evaluates their performance on tumor classification and explores model interpretability through metrics and visualizations.',
+    techStack: [
+      'Python',
+      'scikit-learn',
+      'pandas',
+      'numpy',
+      'matplotlib',
+      'seaborn',
+    ],
+    date: 'February 2025 - March 2025',
+    links: [{ name: 'Github', url: 'https://github.com/farzadferd/Breast-Cancer-Tumor-Classification' }],
+    images: [],
   }
 ];
 
@@ -142,5 +177,18 @@ export const data = [
     title: 'CodeStrike',
     src: '/syntopreview.png', // Placeholder image
     content: <ProjectContent project={{ title: 'CodeStrike' }} />,
+  },
+
+  {
+    category: 'Personal Project',
+    title: 'Predictive Modeling: CA Housing',
+    src: '/syntopreview.png', // Placeholder image
+    content: <ProjectContent project={{ title: 'Predictive Modeling: CA Housing' }} />,
+  },
+  {
+    category: 'Personal Project',
+    title: 'Breast Cancer Tumor Classification',
+    src: '/syntopreview.png', // Placeholder image
+    content: <ProjectContent project={{ title: 'Breast Cancer Tumor Classification' }} />,
   },
 ];
